@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ImgLogo"
+            android:layout_width="202dp"
+            android:layout_height="183dp"
+            app:srcCompat="@drawable/draft"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/TxDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="@string/direccion" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="98dp"
+                android:layout_height="68dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/gmail" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="85dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/phone" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="103dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/maps" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/TxEmail"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ejemplo_email_com" />
+
+            <TextView
+                android:id="@+id/TxTel"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_681393521" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BtnCitas"
+            style="@style/tamañoBotones"
+            android:text="@string/citas" />
+
+        <Button
+            android:id="@+id/BtnPartners"
+            style="@style/tamañoBotones"
+            android:text="@string/partners" />
+
+        <Button
+            android:id="@+id/BtnPedidos"
+            style="@style/tamañoBotones"
+            android:text="@string/pedidos" />
+
+        <Button
+            android:id="@+id/BtnEnvios"
+            style="@style/tamañoBotones"
+            android:text="@string/envios" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
